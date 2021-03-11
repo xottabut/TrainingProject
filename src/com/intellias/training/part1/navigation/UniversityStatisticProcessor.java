@@ -7,6 +7,7 @@ public interface UniversityStatisticProcessor {
 
     Optional<Student> getYoungestStudent();
 
+    @Deprecated
     Optional<Student> getOldestStudent();
 
     List<Student> getThreeBestScoresStudents();

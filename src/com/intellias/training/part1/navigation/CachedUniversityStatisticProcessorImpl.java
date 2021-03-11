@@ -5,14 +5,14 @@ import java.util.Optional;
 
 public class CachedUniversityStatisticProcessorImpl implements UniversityStatisticProcessor {
 
-    private final SimpleUniversityStatisticProcessor simpleUniversityStatisticProcessor;
+    private final SimpleUniversityStatisticProcessorImpl simpleUniversityStatisticProcessor;
     private final University university;
 
     private Optional<Student> youngestStudent;
     private long lastUpdateTime;
 
     public CachedUniversityStatisticProcessorImpl(University university) {
-        simpleUniversityStatisticProcessor = new SimpleUniversityStatisticProcessor(university);
+        simpleUniversityStatisticProcessor = new SimpleUniversityStatisticProcessorImpl(university);
         this.university = university;
         this.lastUpdateTime = university.getLastUpdateTime();
         this.youngestStudent = simpleUniversityStatisticProcessor.getYoungestStudent();

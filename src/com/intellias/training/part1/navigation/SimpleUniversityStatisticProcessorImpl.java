@@ -5,10 +5,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-public class SimpleUniversityStatisticProcessor implements UniversityStatisticProcessor {
+public class SimpleUniversityStatisticProcessorImpl implements UniversityStatisticProcessor {
     private final University university;
 
-    public SimpleUniversityStatisticProcessor(University university) {
+    public SimpleUniversityStatisticProcessorImpl(University university) {
         this.university = university;
     }
 
